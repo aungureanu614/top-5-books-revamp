@@ -23,7 +23,8 @@ function callAPI(input) {
     });
     $.ajax({
         url: url,
-        method: 'GET',
+        method: 'GET'
+
 
     }).done(function(response) {
 
@@ -43,7 +44,7 @@ function showBookImage(topFive) {
     $.each(topFive, function(index, book) {
 
 
-        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<p class="author">' + book.author + '</p>' + '<p class="description">' + book.description + '</p>' + '<a class="amazon-url" target =_blank href=' + book.amazon_product_url + '>Buy it!</a>' + '</th>');
+        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<p class="rank">' + book.rank + '</p>' +'<p class="author">' + book.author + '</p>' + '<p class="description">' + book.description + '</p>' + '<a class="amazon-url" target =_blank href=' + book.amazon_product_url + '>Buy it!</a>' + '</th>');
 
         bookAuthors.push(book.author);
 

@@ -13,8 +13,8 @@ body {
     box-sizing: inherit;
 }
 
-.intro {
-    /*height: 50rem;*/
+.title-five {
+   font-size:300%;
 }
 
 .clearfix:after {
@@ -55,6 +55,14 @@ body {
     border: none;
     cursor: pointer;
     min-width: 160px;
+    width: 100%;
+    opacity: .8;
+    background-color: white;
+    font-size: medium;
+    padding: .5rem;
+    border: 3px;
+    border-style: inset;
+
 }
 
 .dropdown {
@@ -113,6 +121,7 @@ body {
 .table-heading:nth-child(2n+0) {
     position: relative;
     top: 10rem;
+
 
 }
 
