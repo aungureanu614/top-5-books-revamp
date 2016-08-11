@@ -43,7 +43,8 @@ function showBookImage(topFive) {
     $.each(topFive, function(index, book) {
 
 
-        $('#results').append('<th><img id="' + book.rank + '"src=' + book.book_image + '></th><br>' + '<td><p class="author">' + book.author + '</p></td><br>' + '<td><p class="description">' + book.description + '</p></td><br>' + '<td><a class="amazon-url" target =_blank href=' + book.amazon_product_url + '>Buy it!</a></td>');
+        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<p class="author">' + book.author + '</p>' + '<p class="description">' + book.description + '</p>' + '<a class="amazon-url" target =_blank href=' + book.amazon_product_url + '>Buy it!</a>' + '</th>');
+
         bookAuthors.push(book.author);
 
 
@@ -67,7 +68,7 @@ function showBookImage(topFive) {
 function callYTApi(bookAuthors) {
 
     $.each(bookAuthors, function(index, author) {
-        alert(author);
+        //alert(author);
 
         var request = gapi.client.youtube.search.list({
             q: author,
@@ -91,7 +92,7 @@ function callYTApi(bookAuthors) {
 }*/
 function showYTResults(results) {
     $.each(results.items, function(index, item) {
-        $('#search-results').append('<img id="' + item.id.videoId + '"src=' + item.snippet.thumbnails.medium.url + '><br>');
+        $('#search-results').append('<img id="' + item.id.videoId + '"src=' + item.snippet.thumbnails.medium.url + '><br>').hide();
         $('#' + item.id.videoId).click(function() {
             window.location.href = 'https://www.youtube.com/watch?v=' + item.id.videoId;
         });

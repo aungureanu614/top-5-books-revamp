@@ -2,9 +2,9 @@ body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-size: 62.5%;
-    /*background: url('../images/wooden-floor.jpg')no-repeat fixed;
-    background-size: cover;*/
-    
+    background: url('../images/wooden-floor.jpg')no-repeat fixed;
+    background-size: cover;
+    /*background-color: #210017;*/
 }
 
 *,
@@ -12,13 +12,12 @@ body {
 *:after {
     box-sizing: inherit;
 }
+
 .intro {
     /*height: 50rem;*/
-    
-    
 }
 
-.clearfix:after{
+.clearfix:after {
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -32,15 +31,16 @@ body {
     font-size: 2rem;
     float: right;
     padding: 1rem 2rem;
+    color: lightyellow;
 }
 
 .app-info li a {
     text-decoration: none;
-    color: white;
+    color: lightyellow;
 }
 
 .title {
-    color: white;
+    color: lightyellow;
     font-size: 3rem;
     text-align: center;
     border: 2px solid red;
@@ -60,7 +60,6 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
 
 .dropdown-content {
@@ -91,8 +90,37 @@ body {
     background-color: gray;
 }
 
-#results img{
-    width: 182px;
-    height: 280px;
-   
+#results img {
+    width: 250px;
+    height: 300px;
+}
+
+.description {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#results {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.table-heading {
+    width: 20%;
+    
+}
+
+.table-heading:nth-child(2n+0) {
+    position: relative;
+    top: 10rem;
+
+}
+
+#search-results {
+    margin-top: 10%;
+}
+
+.table-heading img{
+    border: 1rem solid lightyellow;
+    border-style: double;
 }
