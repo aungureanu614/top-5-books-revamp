@@ -13,8 +13,20 @@ body {
     box-sizing: inherit;
 }
 
+.title-top{
+    position: relative;
+    bottom: 4rem;
+    right: 1%;
+}
+
 .title-five {
-   font-size:300%;
+    font-size: 300%;
+}
+
+.title-books{
+    position: relative;
+    top: 2rem;
+    left:1%;
 }
 
 .clearfix:after {
@@ -24,6 +36,14 @@ body {
     content: " ";
     clear: both;
     height: 0;
+}
+
+.title {
+    color: lightyellow;
+    font-size: 3rem;
+    text-align: center;
+    border: 2px solid red;
+    padding: 2rem;
 }
 
 .app-info li {
@@ -39,16 +59,10 @@ body {
     color: lightyellow;
 }
 
-.title {
-    color: lightyellow;
-    font-size: 3rem;
-    text-align: center;
-    border: 2px solid red;
-}
-
 .usr-info {
     text-align: center;
     border: 1px solid red;
+    padding: 4rem;
 }
 
 .dropbtn {
@@ -62,7 +76,6 @@ body {
     padding: .5rem;
     border: 3px;
     border-style: inset;
-
 }
 
 .dropdown {
@@ -76,6 +89,7 @@ body {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content li {
@@ -103,11 +117,6 @@ body {
     height: 300px;
 }
 
-.description {
-    width: 40%;
-    margin: 0 auto;
-}
-
 #results {
     width: 100%;
     margin-top: 10%;
@@ -115,21 +124,35 @@ body {
 
 .table-heading {
     width: 20%;
-    
+    position: relative;
 }
 
 .table-heading:nth-child(2n+0) {
     position: relative;
     top: 10rem;
-
-
 }
 
 #search-results {
     margin-top: 10%;
 }
 
-.table-heading img{
+.table-heading img {
     border: 1rem solid lightyellow;
     border-style: double;
+}
+
+.text-box-style {
+    background-color: lightblue;
+    width: 250px;
+    margin: 0 auto;
+    opacity: .8;
+    margin-top: .5rem;
+}
+
+.text-box-style p a{
+    padding: .5rem;
+}
+
+.rank {
+    font-weight: bold;
 }
