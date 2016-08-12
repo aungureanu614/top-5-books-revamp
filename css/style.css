@@ -174,3 +174,7 @@ body {
 .rank {
     font-weight: bold;
 }
+
+.hide{
+    display: none;
+}

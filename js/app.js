@@ -44,23 +44,19 @@ function showBookImage(topFive) {
     $.each(topFive, function(index, book) {
 
 
-        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<div class="text-box-style"><p class="rank">' + book.rank + '</p>' + '<p class="author">' + book.author + '</p>' + '<p class="description hide">' + book.description + '</p>' + '<a class="amazon-url" target =_blank href=' + book.amazon_product_url + '>Buy it!</a>' + '</div></th>');
+        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<div class="text-box-style hide"><p class="rank">' + "Rank: " + book.rank + '</p>' + '<p class="author">' + "Author: " + book.author + '</p>' + '<p class="description">' + "Synopsis: " + book.description + '</p>' + '<a class="amazon-url" target =_blank href=' +  book.amazon_product_url + '>Buy it!</a>' + '</div></th>');
 
         bookAuthors.push(book.author);
 
 
 
-        /*$('#' + book.rank).mouseenter(function() {
-            $(this).stop().animate({
-                opacity: 0.2
-            }, 200);
-            $('.table-heading p').removeClass('hide');
+        $('#' + book.rank).mouseenter(function() {
+            $(this).parent().find('div').removeClass('hide');
+           
         }).mouseleave(function() {
-            $(this).stop().animate({
-                opacity: 1
-            }, 200);
-            $('.table-heading p').addClass('hide');
-        });*/
+           
+            $('div.text-box-style').addClass('hide');
+        });
 
 
     });
