@@ -44,18 +44,20 @@ function showBookImage(topFive) {
     $.each(topFive, function(index, book) {
 
 
-        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<div class="text-box-style hide"><p class="rank">' + "Rank: " + book.rank + '</p>' + '<p class="author">' + "Author: " + book.author + '</p>' + '<p class="description">' + "Synopsis: " + book.description + '</p>' + '<a class="amazon-url" target =_blank href=' +  book.amazon_product_url + '>Buy it!</a>' + '</div></th>');
+        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<div class="text-box-style"><p class="rank hide">' + "Rank: " + book.rank + '</p>' + '<p class="author hide">' + "Author: " + book.author + '</p>' + '<p class="description hide">' + book.description + '</p>' + '<a class="amazon-url" target =_blank href=' +  book.amazon_product_url + '>Buy it</a>' + '</div></th>');
 
         bookAuthors.push(book.author);
 
 
 
         $('#' + book.rank).mouseenter(function() {
-            $(this).parent().find('div').removeClass('hide');
-           
+            $(this).parent().find('p').removeClass('hide');
+            $(this).parent().find('a').addClass('hide');
+            
         }).mouseleave(function() {
-           
-            $('div.text-box-style').addClass('hide');
+            $(this).parent().find('p').addClass('hide');
+            $(this).parent().find('a').removeClass('hide');
+    
         });
 
 
