@@ -13,6 +13,26 @@ body {
     box-sizing: inherit;
 }
 
+.about-myapp{
+    padding-top: 10rem;
+}
+
+.about-header {
+    color: lightblue;
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.strong-style {
+    font-size: 3rem;
+    color: lightblue;
+    text-align: center;
+    padding: 4rem;
+    font-weight: bold;
+}
+
 .font-pacifico {
     font-family: 'Pacifico';
 }
@@ -60,7 +80,7 @@ body {
 .app-info li a {
     text-decoration: none;
     color: lightyellow;
-    font-size:  1rem;
+    font-size: 1rem;
 }
 
 .usr-info {
@@ -78,7 +98,6 @@ body {
     font-size: medium;
     padding: .5rem;
     border: 3px;
-   
 }
 
 .dropdown {
@@ -130,24 +149,24 @@ body {
     position: relative;
 }
 
-.table-heading:first-child{
+.table-heading:first-child {
     position: relative;
-    bottom:23rem;
+    bottom: 23rem;
 }
 
 .table-heading:nth-child(2n+0) {
     position: relative;
     bottom: 14rem;
 }
+
 .table-heading:nth-child(3) {
     position: relative;
     bottom: 5rem;
 }
 
-
-.table-heading:last-child{
+.table-heading:last-child {
     position: relative;
-    bottom:23rem;
+    bottom: 23rem;
 }
 
 #search-results {
@@ -160,7 +179,6 @@ body {
 }
 
 .text-box-style {
-    
     width: 100%;
     margin: 0 auto;
     opacity: .8;
@@ -177,11 +195,11 @@ body {
     font-weight: bold;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.amazon-link{
+.amazon-link {
     font-size: 1.5rem;
     text-decoration: none;
     color: lightyellow;

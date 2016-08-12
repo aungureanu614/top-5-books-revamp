@@ -1,7 +1,8 @@
 $(function() {
 
     $('.dropdown-content li').on('click', function() {
-
+        $('.about-myapp').remove();
+        $('.title').removeClass('hide');
         $('.dropbtn').text($(this).text());
         var input = $(this).text();
         callAPI(input);
@@ -30,14 +31,14 @@ function callAPI(input) {
 
         var result = response.results;
         var topFive = result.books.slice(0, 5);
-        showBookImage(topFive);
+        showBookInfo(topFive);
         //console.log(result);
     });
 }
 
 
 
-function showBookImage(topFive) {
+function showBookInfo(topFive) {
     clearPrevious();
     var bookAuthors = [];
 
