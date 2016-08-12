@@ -130,9 +130,24 @@ body {
     position: relative;
 }
 
+.table-heading:first-child{
+    position: relative;
+    bottom:30rem;
+}
+
 .table-heading:nth-child(2n+0) {
     position: relative;
-    top: 10rem;
+    bottom: 20rem;
+}
+.table-heading:nth-child(3) {
+    position: relative;
+    bottom: 10rem;
+}
+
+
+.table-heading:last-child{
+    position: relative;
+    bottom:30rem;
 }
 
 #search-results {
