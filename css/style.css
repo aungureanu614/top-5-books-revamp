@@ -132,22 +132,22 @@ body {
 
 .table-heading:first-child{
     position: relative;
-    bottom:30rem;
+    bottom:23rem;
 }
 
 .table-heading:nth-child(2n+0) {
     position: relative;
-    bottom: 20rem;
+    bottom: 14rem;
 }
 .table-heading:nth-child(3) {
     position: relative;
-    bottom: 10rem;
+    bottom: 5rem;
 }
 
 
 .table-heading:last-child{
     position: relative;
-    bottom:30rem;
+    bottom:23rem;
 }
 
 #search-results {
@@ -160,15 +160,17 @@ body {
 }
 
 .text-box-style {
-    background-color: lightblue;
-    width: 200px;
+    
+    width: 100%;
     margin: 0 auto;
     opacity: .8;
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
 .text-box-style p {
     padding: .5rem;
+    font-size: 1rem;
+    color: lightyellow;
 }
 
 .rank {
@@ -179,3 +181,8 @@ body {
     display: none;
 }
 
+.amazon-link{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: lightyellow;
+}

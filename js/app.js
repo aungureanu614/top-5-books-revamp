@@ -44,7 +44,7 @@ function showBookImage(topFive) {
     $.each(topFive, function(index, book) {
 
 
-        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<div class="text-box-style"><p class="rank hide">' + "Rank: " + book.rank + '</p>' + '<p class="author hide">' + "Author: " + book.author + '</p>' + '<p class="description hide">' + book.description + '</p>' + '<a class="amazon-url" target =_blank href=' +  book.amazon_product_url + '>Buy it</a>' + '</div></th>');
+        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<div class="text-box-style"><p class="rank hide">' + "Rank: " + book.rank + '</p>' + '<p class="author hide">' + "Author: " + book.author + '</p>' + '<p class="description hide">' + book.description + '</p>' + '<a class="amazon-link" target =_blank href=' +  book.amazon_product_url + '>Buy it</a>' + '</div></th>');
 
         bookAuthors.push(book.author);
 
