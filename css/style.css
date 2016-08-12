@@ -13,7 +13,7 @@ body {
     box-sizing: inherit;
 }
 
-.about-myapp{
+.about-myapp {
     padding-top: 10rem;
 }
 
@@ -69,18 +69,12 @@ body {
     padding: 2rem;
 }
 
-.app-info li {
-    color: white;
-    font-size: 1rem;
-    float: right;
-    padding: 1rem 1rem;
-    color: lightyellow;
-}
-
 .app-info li a {
     text-decoration: none;
     color: lightyellow;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    float: right;
+    padding: 2rem 2rem;
 }
 
 .usr-info {
