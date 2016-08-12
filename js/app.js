@@ -95,7 +95,7 @@ function callYTApi(bookAuthors) {
 }*/
 function showYTResults(results) {
     $.each(results.items, function(index, item) {
-        $('#search-results').append('<img id="' + item.id.videoId + '"src=' + item.snippet.thumbnails.medium.url + '><br>').hide();
+        $('#search-results').append('<img id="' + item.id.videoId + '"src=' + item.snippet.thumbnails.medium.url + '>');
         $('#' + item.id.videoId).click(function() {
             window.location.href = 'https://www.youtube.com/watch?v=' + item.id.videoId;
         });
