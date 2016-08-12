@@ -13,9 +13,13 @@ body {
     box-sizing: inherit;
 }
 
-.title-top{
+.font-pacifico {
+    font-family: 'Pacifico';
+}
+
+.title-top {
     position: relative;
-    bottom: 4rem;
+    bottom: 3rem;
     right: 1%;
 }
 
@@ -23,10 +27,10 @@ body {
     font-size: 300%;
 }
 
-.title-books{
+.title-books {
     position: relative;
     top: 2rem;
-    left:1%;
+    left: 1%;
 }
 
 .clearfix:after {
@@ -42,26 +46,25 @@ body {
     color: lightyellow;
     font-size: 3rem;
     text-align: center;
-    border: 2px solid red;
     padding: 2rem;
 }
 
 .app-info li {
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     float: right;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     color: lightyellow;
 }
 
 .app-info li a {
     text-decoration: none;
     color: lightyellow;
+    font-size:  1rem;
 }
 
 .usr-info {
     text-align: center;
-    border: 1px solid red;
     padding: 4rem;
 }
 
@@ -149,7 +152,7 @@ body {
     margin-top: .5rem;
 }
 
-.text-box-style p a{
+.text-box-style p a {
     padding: .5rem;
 }
 
