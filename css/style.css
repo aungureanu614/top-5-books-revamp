@@ -13,24 +13,13 @@ body {
     box-sizing: inherit;
 }
 
-.about-myapp {
-    padding-top: 10rem;
-}
-
 .about-header {
-    color: lightblue;
+    color: lightyellow;
     font-size: 2rem;
+    font-family: 'Righteous', cursive;
     width: 50%;
     text-align: center;
     margin: 0 auto;
-}
-
-.strong-style {
-    font-size: 3rem;
-    color: lightblue;
-    text-align: center;
-    padding: 4rem;
-    font-weight: bold;
 }
 
 .font-pacifico {
@@ -66,7 +55,7 @@ body {
     color: lightyellow;
     font-size: 3rem;
     text-align: center;
-    padding: 2rem;
+    margin-bottom: 5rem;
 }
 
 .app-info li a {
@@ -97,6 +86,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
+    bottom: 2rem;
 }
 
 .dropdown-content {
@@ -164,7 +154,14 @@ body {
 }
 
 #search-results {
-    margin-top: 10%;
+    width: 72rem;
+    margin: 0 auto;
+}
+
+#search-results img {
+    width: 20%;
+    border: 2px solid lightyellow;
+    padding: .5rem;
 }
 
 .table-heading img {
@@ -176,7 +173,7 @@ body {
     width: 100%;
     margin: 0 auto;
     opacity: .8;
-    margin-top: 1rem;
+    padding: 1rem;
 }
 
 .text-box-style p {
@@ -185,7 +182,7 @@ body {
     color: lightyellow;
 }
 
-.rank {
+.bold {
     font-weight: bold;
 }
 
