@@ -15,11 +15,10 @@
         <ul class="app-info font-pacifico clearfix">
             <li><a class="nyt-link" href="http://www.nytimes.com/books/best-sellers/?_r=0" target="_blank">New York Times Website</a></li>
         </ul>
-        <div class="title font-pacifico"><span class="title-top">Top</span> <span class="title-five">5</span><span class="title-books">Books</span></div>
-        <div class="about-myapp">
-            <p class="about-header"> Discover the top 5 book recommendations based on the current New York Times bestsellers lists. Choose a topic to see your list and receive book summaries. Make sure to also check out YouTube videos about the authors. Enjoy and happy reading!</p>
+        <div class="title font-pacifico relative"><span class="title-top">Top</span> <span class="title-five">5</span><span class="title-books">Books</span>
         </div>
-        <ul class="usr-info">
+        <div>
+            <ul class="usr-info">
             <li class="dropdown">
                 <button class="dropbtn">Choose a Topic</button>
                 <ul class="dropdown-content">
@@ -37,15 +36,18 @@
                 </ul>
             </li>
         </ul>
+        </div>
+        <div class="about-myapp">
+            <p class="about-header"> Discover the top 5 book recommendations based on the current New York Times bestsellers list. Choose a topic to see your list and receive book summaries. Happy reading!</p>
+        </div>
     </div>
-    <div class="table-style">
+    <div class="table-style relative">
         <table id="results">
         </table>
     </div>
     <div id="search-results"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script src="https://apis.google.com/js/client.js?onload=init"></script>
 </body>
 
 </html>

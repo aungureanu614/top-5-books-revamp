@@ -9,12 +9,7 @@ $(function() {
     });
 });
 
-function init() {
-    gapi.client.setApiKey('AIzaSyAAeEliIWNKfAlOjtTFoEfGoTtqt_RAF0I');
-    gapi.client.load("youtube", "v3", function() {
-        //yt api is ready
-    });
-}
+
 
 function callAPI(input) {
 
@@ -40,17 +35,12 @@ function callAPI(input) {
 
 function showBookInfo(topFive) {
     clearPrevious();
-    var bookAuthors = [];
+
 
     $.each(topFive, function(index, book) {
 
 
         $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + '<div class="text-box-style"><p class="bold hide">' + "Rank: " + book.rank + '</p>' + '<p class="author bold hide">' + "Author: " + book.author + '</p>' + '<p class="description bold hide">' + book.description + '</p>' + '<a class="amazon-link" target =_blank href=' + book.amazon_product_url + '>Buy it</a>' + '</div></th>');
-
-        bookAuthors.push(book.author);
-
-
-
         $('#' + book.rank).mouseenter(function() {
             $(this).parent().find('p').removeClass('hide');
             $(this).parent().find('a').addClass('hide');
@@ -58,47 +48,10 @@ function showBookInfo(topFive) {
         }).mouseleave(function() {
             $(this).parent().find('p').addClass('hide');
             $(this).parent().find('a').removeClass('hide');
-
-        });
-
-
-    });
-    //showBookInfo(topFive);
-    callYTApi(bookAuthors);
-}
-
-function callYTApi(bookAuthors) {
-
-    $.each(bookAuthors, function(index, author) {
-        //alert(author);
-
-        var request = gapi.client.youtube.search.list({
-            q: author,
-            part: 'snippet',
-            type: "video",
-            safeSearch: "strict",
-            maxResults: 1
-        }).execute(function(response) {
-
-            var results = response.result;
-
-            console.log(results);
-            showYTResults(results);
-
         });
     });
-}
 
-/*function showBookInfo(topFive) {
 
-}*/
-function showYTResults(results) {
-    $.each(results.items, function(index, item) {
-        $('#search-results').append('<img id="' + item.id.videoId + '"src=' + item.snippet.thumbnails.medium.url + '>');
-        $('#' + item.id.videoId).click(function() {
-            window.location.href = 'https://www.youtube.com/watch?v=' + '_blank' + item.id.videoId;
-        });
-    });
 }
 
 function clearPrevious() {
