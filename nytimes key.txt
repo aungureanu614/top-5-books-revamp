@@ -1,5 +1,0 @@
-API: 40ea26fc62c9450683c5d6183ac81f89 - books
-
-http://api.nytimes.com/svc/books/lists/Science.json?&api-key=40ea26fc62c9450683c5d6183ac81f89
-
-API: 40ea26fc62c9450683c5d6183ac81f89 - movies

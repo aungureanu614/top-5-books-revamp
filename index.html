@@ -11,41 +11,33 @@
 </head>
 
 <body>
-    <div class="intro">
-        <ul class="app-info font-pacifico clearfix">
-            <li><a class="nyt-link" href="http://www.nytimes.com/books/best-sellers/?_r=0" target="_blank">New York Times Website</a></li>
-        </ul>
-        <div class="title font-pacifico relative"><span class="title-top">Top</span> <span class="title-five">5</span><span class="title-books">Books</span>
+    <div class="usr-info clearfix">
+        <a class="nyt-link intro-txt" href="http://www.nytimes.com/books/best-sellers/?_r=0" target="_blank">New York Times Website</a>
+        <h1 class="title intro-txt placement-rel"><span class="title-top placement-rel">Top</span><span class="title-five">5</span><span class="title-books placement-rel">Books</span>
+        </h1>
+        <div class="dropdown">
+            <button class="dropbtn">Choose a Topic</button>
+            <ul class="dropdown-content">
+                <li>Animals</li>
+                <li>Family</li>
+                <li>Celebrities</li>
+                <li>Culture</li>
+                <li>Education</li>
+                <li>Health</li>
+                <li>Science</li>
+                <li>Sports</li>
+                <li>Relationships</li>
+                <li>Travel</li>
+                <li>Humor</li>
+            </ul>
         </div>
-        <div>
-            <ul class="usr-info">
-            <li class="dropdown">
-                <button class="dropbtn">Choose a Topic</button>
-                <ul class="dropdown-content">
-                    <li>Animals</li>
-                    <li>Family</li>
-                    <li>Celebrities</li>
-                    <li>Culture</li>
-                    <li>Education</li>
-                    <li>Health</li>
-                    <li>Science</li>
-                    <li>Sports</li>
-                    <li>Relationships</li>
-                    <li>Travel</li>
-                    <li>Humor</li>
-                </ul>
-            </li>
-        </ul>
-        </div>
-        <div class="about-myapp">
-            <p class="about-header"> Discover the top 5 book recommendations based on the current New York Times bestsellers list. Choose a topic to see your list and receive book summaries. Happy reading!</p>
-        </div>
+        <p class="app-description"> Discover the top 5 book recommendations based on the New York Times bestseller list for the current month. Choose a topic to see your list and receive book information, summaries and links to buy the books on Amazon. Happy reading!
+        </p>
     </div>
-    <div class="table-style relative">
+    <div class="table placement-rel">
         <table id="results">
         </table>
     </div>
-    <div id="search-results"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
