@@ -65,7 +65,6 @@ body {
 
 .dropbtn {
     border: none;
-    cursor: pointer;
     min-width: 160px;
     width: 100%;
     opacity: .8;
