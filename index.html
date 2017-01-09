@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,32 +11,42 @@
 
 <body>
     <div class="usr-info clearfix">
-        <a class="nyt-link intro-txt" href="http://www.nytimes.com/books/best-sellers/?_r=0" target="_blank">New York Times Website</a>
-        <h1 class="title intro-txt placement-rel"><span class="title-top placement-rel">Top</span><span class="title-five">5</span><span class="title-books placement-rel">Books</span>
-        </h1>
-        <div class="dropdown">
-            <button class="dropbtn">Choose a Topic</button>
-            <ul class="dropdown-content">
-                <li>Animals</li>
-                <li>Family</li>
-                <li>Celebrities</li>
-                <li>Culture</li>
-                <li>Education</li>
-                <li>Health</li>
-                <li>Science</li>
-                <li>Sports</li>
-                <li>Relationships</li>
-                <li>Travel</li>
-                <li>Humor</li>
-            </ul>
+        <div class="header">
+            <a class="nyt-link intro-txt" href="http://www.nytimes.com/books/best-sellers/?_r=0" target="_blank">New York Times Website</a>
         </div>
+        <div class="intro">
+            <h1 class="title intro-txt placement-rel"><span class="title-top placement-rel">Top</span><span class="title-five">5</span><span class="title-books placement-rel">Books</span>
+            </h1>
+            
+        
         <p class="app-description"> Discover the top 5 book recommendations based on the New York Times bestseller list for the current month. Choose a topic to see your list and receive book information, summaries and links to buy the books on Amazon. Happy reading!
         </p>
+        <div class="dropdown">
+                <button class="dropbtn"> Choose a Topic<span class="arrow">&#9660;</span></button>
+                <ul class="dropdown-content">
+                    <li>Animals</li>
+                    <li>Family</li>
+                    <li>Celebrities</li>
+                    <li>Culture</li>
+                    <li>Education</li>
+                    <li>Health</li>
+                    <li>Science</li>
+                    <li>Sports</li>
+                    <li>Relationships</li>
+                    <li>Travel</li>
+                    <li>Humor</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="table placement-rel">
         <table id="results">
         </table>
+        
     </div>
+    <footer>
+        <p class="contact">Created By: Ana-Maria Ungureanu</p> 
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>

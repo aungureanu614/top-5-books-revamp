@@ -2,9 +2,8 @@ body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-size: 62.5%;
-    background: url('../images/wooden-floor.jpg')no-repeat fixed;
     background-size: cover;
-    min-height: 60rem;
+    /*min-height: 60rem;*/
 }
 
 *,
@@ -22,6 +21,15 @@ body {
     height: 0;
 }
 
+.header{
+    height: 5rem;
+    background-color: #3e3436;
+}
+
+.arrow{
+    padding: .3rem;
+}
+
 .placement-rel {
     position: relative;
 }
@@ -32,7 +40,11 @@ body {
     float: right;
     padding: 2rem 2rem;
 }
-
+.intro{
+    background: url('../images/bookspic.jpg')no-repeat fixed;
+    /*height: 90%;*/
+    height: 45rem;
+}
 .intro-txt {
     font-family: 'Pacifico';
     color: #FFFFE0;
@@ -42,6 +54,7 @@ body {
     font-size: 3rem;
     width: 18%;
     margin: 0 auto;
+    /*padding: 4% 0 4% 0;*/
 }
 
 .title-top {
@@ -68,7 +81,7 @@ body {
     min-width: 160px;
     width: 100%;
     opacity: .8;
-    background-color: #ccc;
+    background-color: azure;
     font-size: medium;
     padding: .5rem;
     border: 3px;
@@ -81,6 +94,8 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    max-height: 200px;
+    overflow: scroll;
 }
 
 .dropdown-content li {
@@ -94,6 +109,7 @@ body {
 
 .dropdown-content li:hover {
     background-color: #D3D3D3;
+    cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
@@ -111,11 +127,11 @@ body {
     width: 56%;
     text-align: center;
     margin: 0 auto;
+    padding-top: 5%;
 }
 
 #results {
     width: 100%;
-    margin-top: 10%;
 }
 
 #results img {
@@ -124,15 +140,20 @@ body {
 }
 
 .table {
-    top: 6rem;
+   
+    background-color: #bf5c71;
+    display: flex;
+    align-items: center;
+    /*height: 100%;*/
 }
 
 .table-heading {
     width: 20%;
     position: relative;
+    padding: 100px 0;
 }
 
-.table-heading:first-child {
+/*.table-heading:first-child {
     position: relative;
     bottom: 23rem;
 }
@@ -150,11 +171,15 @@ body {
 .table-heading:last-child {
     position: relative;
     bottom: 23rem;
-}
+}*/
 
 .table-heading img {
+    border: .5rem solid #FFFFE0;
+    border-style: ridge;
+    cursor: pointer;
+}
+.table-heading img:hover{
     border: 1rem solid #FFFFE0;
-    border-style: double;
 }
 
 .text-box-style {
@@ -171,12 +196,27 @@ body {
     font-weight: bold;
 }
 
-.hide-txt {
+/*.hide-txt {
     display: none;
-}
+}*/
 
 .amazon-link {
     font-size: 1.5rem;
     text-decoration: none;
     color: #FFFFE0;
+}
+
+footer {
+    
+    height: 15rem;
+    background-color: #3e3436;
+
+}
+
+.contact{
+    color: #FFFFE0;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 1rem;
+    padding: 2rem;
 }
