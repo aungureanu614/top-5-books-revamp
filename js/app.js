@@ -1,11 +1,19 @@
 $(function() {
 
-    $('.dropdown-content li').on('click', function() {
-        // $('.app-description').remove(); //clear app description
-        $('.dropbtn').text($(this).text());
+    // $('.dropdown-content li').on('click', function() {
+    //     // $('.app-description').remove(); //clear app description
+    //     $('.dropbtn').text($(this).text());
+    //     var input = $(this).text();
+    //     callAPI(input); //get user input and send it to the API function
+    // });
+
+    $('.dropdown-item').on('click', function(){
+        $('#dropdownMenuButton').text($(this).text());
         var input = $(this).text();
-        callAPI(input); //get user input and send it to the API function
-    });
+        console.log(input);
+        callAPI(input);
+    })
+
 });
 
 function callAPI(input) {
@@ -37,15 +45,7 @@ function showBookInfo(topFive) {
             '<p class="author hide-txt">' + "Author: " + book.author + '</p>' + '<p class="description hide-txt">' + 
             book.description + '</p>' + '</div></th>');
         $('#' + book.rank).wrap('<a target=_blank href="' + book.amazon_product_url + '" />');
-        //hide and unhide book info on image hover
-        // $('#' + book.rank).mouseenter(function() {
-        //     $(this).parent().find('p').removeClass('hide-txt');
-        //     $(this).parent().find('a').addClass('hide-txt');
-
-        // }).mouseleave(function() {
-        //     $(this).parent().find('p').addClass('hide-txt');
-        //     $(this).parent().find('a').removeClass('hide-txt');
-        // });
+   
     });
 }
 
