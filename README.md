@@ -29,6 +29,7 @@ The app is built using:
 * JQuery
 * HTML
 * CSS
+* Bootstrap
 
 ##Development Roadmap
 
