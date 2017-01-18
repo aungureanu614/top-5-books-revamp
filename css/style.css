@@ -110,6 +110,17 @@ body {
     padding-top: 5%;
 }
 
+.container{
+    background-color: #bf5c71;
+    width: 100%;
+    
+}
+
+.col-xs-2 {
+    width: 15%;
+    padding: 5% 0 5% 0;
+    margin: 0 auto;
+}
 
 img {
     width: 100%;
@@ -175,17 +186,6 @@ footer {
     color: saddlebrown;
 }
 
-.container{
-    background-color: #bf5c71;
-    width: 100%;
-    
-}
-
-.col-xs-2 {
-    width: 15%;
-    padding: 5% 0 5% 0;
-    margin: 0 auto;
-}
 
 
 
