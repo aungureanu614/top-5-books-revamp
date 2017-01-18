@@ -13,7 +13,7 @@ Why is this app useful? If you're someone who's always looking for a great new b
 
 ##Working Prototype
 
-You can access a working prototype of the app here: https://aungureanu614.github.io/Thinkful-API-hack/
+You can access a working prototype of the app here: https://aungureanu614.github.io/top-5-books-revamp/
 
 ##Functionality
 The app's functionality includes:
