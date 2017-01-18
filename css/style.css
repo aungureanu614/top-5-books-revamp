@@ -39,10 +39,6 @@ body {
 }
 
 
-.placement-rel {
-    position: relative;
-}
-
 .nyt-link {
     text-decoration: none;
     font-size: 1.5rem;
@@ -114,46 +110,19 @@ body {
     padding-top: 5%;
 }
 
-#results {
+
+img {
     width: 100%;
-}
-
-#results img {
-    width: 200px;
-    height: 280px;
-}
-
-.table {
-   
-    background-color: #bf5c71;
-    margin-bottom: 0;  
-}
-.table th{
-    padding: 2.75rem;
-}
-
-.table-heading {
-    width: 20%;
-    position: relative;
-    text-align: center;
-}
-
-
-
-.table-heading img {
+    height: 35%;
     border: .5rem solid #FFFFE0;
     border-style: ridge;
     cursor: pointer;
 }
-.table-heading img:hover{
+img:hover{
     border: 1rem solid #FFFFE0;
 }
 
 .text-box-style {
-    width: 100%;
-    margin: 0 auto;
-    opacity: .8;
-    padding: 1rem;
     text-align: center;
 }
 
@@ -164,12 +133,6 @@ body {
     font-weight: bold;
 }
 
-
-.amazon-link {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #FFFFE0;
-}
 
 footer {
     
@@ -211,5 +174,19 @@ footer {
     border-radius: 50%;
     color: saddlebrown;
 }
+
+.container{
+    background-color: #bf5c71;
+    width: 100%;
+    
+}
+
+.col-xs-2 {
+    width: 15%;
+    padding: 5% 0 5% 0;
+    margin: 0 auto;
+}
+
+
 
 
