@@ -40,11 +40,10 @@ function showBookInfo(topFive) {
     $.each(topFive, function(index, book) {
 
         //add results of API call to the page
-        $('#results, tr').append('<th class=table-heading><img id="' + book.rank + '"src=' + book.book_image + '>' + 
-            '<div class="text-box-style"><p class="hide-txt">' + "Rank: " + book.rank + '</p>' + 
-            '<p class="author hide-txt">' + "Author: " + book.author + '</p>' + '<p class="description hide-txt">' + 
-            book.description + '</p>' + '</div></th>');
-        $('#' + book.rank).wrap('<a target=_blank href="' + book.amazon_product_url + '" />');
+        $('.row').append('<div class=col-xs-2 col-half-offset><img id="' + book.rank + '"src=' + book.book_image + '>' + '<div class=text-box-style><p>' + "Rank: " + book.rank + '</p>' 
+            + '<p>' + "Author: " + book.author + '</p>' + '<p>' + book.description + '</p></div></div>');
+
+       $('#' + book.rank).wrap('<a target=_blank href="' + book.amazon_product_url + '" />');
    
     });
 }

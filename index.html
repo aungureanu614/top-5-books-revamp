@@ -2,9 +2,12 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>NY Times Top 5</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -13,53 +16,59 @@
 </head>
 
 <body>
-<div class="main">
-    <div class="usr-info clearfix">
-        <div class="header">
-            <a class="nyt-link intro-txt" href="http://www.nytimes.com/books/best-sellers/?_r=0" target="_blank">New York Times Website</a>
-        </div>
-        <div class="intro">
-            <h1 class="title intro-txt placement-rel"><span class="title-top placement-rel">Top</span><span class="title-five">5</span><span class="title-books placement-rel">Books</span>
+    <div class="main">
+        <div class="usr-info clearfix">
+            <div class="header">
+                <a class="nyt-link intro-txt" href="http://www.nytimes.com/books/best-sellers/?_r=0" target="_blank">New York Times Website</a>
+            </div>
+            <div class="intro">
+                <h1 class="title intro-txt placement-rel"><span class="title-top placement-rel">Top</span><span class="title-five">5</span><span class="title-books placement-rel">Books</span>
             </h1>
-            <p class="app-description"> Discover the top 5 book recommendations based on the New York Times bestseller list for the current month. Choose a topic to see your list and receive book information and summaries. Click on any book image to buy it on Amazon. Happy reading!
-            </p>
-          
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose A Topic
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item">Animals</a>
-                    <a class="dropdown-item">Family</a>
-                    <a class="dropdown-item">Celebrities</a>
-                    <a class="dropdown-item">Culture</a>
-                    <a class="dropdown-item">Education</a>
-                    <a class="dropdown-item">Health</a>
-                    <a class="dropdown-item">Science</a>
-                    <a class="dropdown-item">Sports</a>
-                    <a class="dropdown-item">Relationships</a>
-                    <a class="dropdown-item">Travel</a>
-                    <a class="dropdown-item">Humor</a>
+                <p class="app-description"> Discover the top 5 book recommendations based on the New York Times bestseller list for the current month. Choose a topic to see your list and receive book information and summaries. Click on any book image to buy it on Amazon. Happy reading!
+                </p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choose A Topic
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item">Animals</a>
+                        <a class="dropdown-item">Family</a>
+                        <a class="dropdown-item">Celebrities</a>
+                        <a class="dropdown-item">Culture</a>
+                        <a class="dropdown-item">Education</a>
+                        <a class="dropdown-item">Health</a>
+                        <a class="dropdown-item">Science</a>
+                        <a class="dropdown-item">Sports</a>
+                        <a class="dropdown-item">Relationships</a>
+                        <a class="dropdown-item">Travel</a>
+                        <a class="dropdown-item">Humor</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="table placement-rel">
+        <!-- <div class="table placement-rel">
         <table id="results">
         </table>
-    </div>
-    <footer>
-        <div class="contact">
-            <p class="created-by">Created By: <a class="portfolio-link" href="https://aungureanu614.github.io/My-Portfolio/" target="_blank">Ana-Maria Ungureanu</a></p>
-            <a href="mailto:aungureanu614@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <a href="https://github.com/aungureanu614" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/ana-maria-ungureanu-b027a138" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div> -->
+        <div class="container">
+            <div class="row">
+                
+                
+            </div>
         </div>
-    </footer>
-</div>
+
+        <footer>
+            <div class="contact">
+                <p class="created-by">Created By: <a class="portfolio-link" href="https://aungureanu614.github.io/My-Portfolio/" target="_blank">Ana-Maria Ungureanu</a></p>
+                <a href="mailto:aungureanu614@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://github.com/aungureanu614" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/ana-maria-ungureanu-b027a138" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
