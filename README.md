@@ -1,7 +1,7 @@
 # Top 5 Books
 Thinkful (https://www.thinkful.com) Top 5 Books - API Hack
 
-![Screenshot](http://imgur.com/a/tVway)
+![Screenshot](https://snag.gy/SkMXre.jpg)
 
 ##Background
 
