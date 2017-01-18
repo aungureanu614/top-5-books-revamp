@@ -49,5 +49,5 @@ function showBookInfo(topFive) {
 }
 
 function clearPrevious() {
-    $('#results').empty();
+    $('.row').empty();
 }
